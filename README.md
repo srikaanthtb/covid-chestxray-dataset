@@ -12,45 +12,48 @@ This project is approved by the University of Montreal's Ethics Committee #CERSE
 
 Current stats of PA, AP, and AP Supine views. Labels 0=No or 1=Yes. Data loader is [here](https://github.com/mlmed/torchxrayvision/blob/master/torchxrayvision/datasets.py#L867)
 ``` 
-COVID19_Dataset num_samples=263 views=['PA', 'AP']
-{'ARDS': {0.0: 248, 1.0: 15},
- 'Bacterial Pneumonia': {0.0: 246, 1.0: 17},
- 'COVID-19': {0.0: 54, 1.0: 209},
- 'Chlamydophila': {0.0: 262, 1.0: 1},
- 'Fungal Pneumonia': {0.0: 251, 1.0: 12},
- 'Klebsiella': {0.0: 262, 1.0: 1},
- 'Legionella': {0.0: 261, 1.0: 2},
- 'MERS': {0.0: 263},
- 'No Finding': {0.0: 258, 1.0: 5},
- 'Pneumocystis': {0.0: 251, 1.0: 12},
- 'Pneumonia': {0.0: 5, 1.0: 258},
- 'SARS': {0.0: 247, 1.0: 16},
- 'Streptococcus': {0.0: 250, 1.0: 13},
- 'Viral Pneumonia': {0.0: 38, 1.0: 225}}
+COVID19_Dataset num_samples=328 views=['PA', 'AP']
+{'ARDS': {0.0: 313, 1.0: 15},
+ 'Bacterial Pneumonia': {0.0: 304, 1.0: 24},
+ 'COVID-19': {0.0: 78, 1.0: 250},
+ 'Chlamydophila': {0.0: 327, 1.0: 1},
+ 'Fungal Pneumonia': {0.0: 316, 1.0: 12},
+ 'Klebsiella': {0.0: 321, 1.0: 7},
+ 'Legionella': {0.0: 325, 1.0: 3},
+ 'MERS': {0.0: 328},
+ 'No Finding': {0.0: 316, 1.0: 12},
+ 'Pneumocystis': {0.0: 316, 1.0: 12},
+ 'Pneumonia': {0.0: 19, 1.0: 309},
+ 'SARS': {0.0: 312, 1.0: 16},
+ 'Streptococcus': {0.0: 315, 1.0: 13},
+ 'Viral Pneumonia': {0.0: 62, 1.0: 266}}
 
-COVID19_Dataset num_samples=45 views=['AP Supine']
-{'ARDS': {0.0: 44, 1.0: 1},
- 'Bacterial Pneumonia': {0.0: 45},
- 'COVID-19': {0.0: 4, 1.0: 41},
- 'Chlamydophila': {0.0: 45},
- 'Fungal Pneumonia': {0.0: 45},
- 'Klebsiella': {0.0: 45},
- 'Legionella': {0.0: 45},
- 'MERS': {0.0: 45},
- 'No Finding': {0.0: 45},
- 'Pneumocystis': {0.0: 45},
- 'Pneumonia': {0.0: 4, 1.0: 41},
- 'SARS': {0.0: 45},
- 'Streptococcus': {0.0: 45},
- 'Viral Pneumonia': {0.0: 4, 1.0: 41}}
+COVID19_Dataset num_samples=90 views=['AP Supine']
+{'ARDS': {0.0: 89, 1.0: 1},
+ 'Bacterial Pneumonia': {0.0: 90},
+ 'COVID-19': {0.0: 9, 1.0: 81},
+ 'Chlamydophila': {0.0: 90},
+ 'Fungal Pneumonia': {0.0: 90},
+ 'Klebsiella': {0.0: 90},
+ 'Legionella': {0.0: 90},
+ 'MERS': {0.0: 90},
+ 'No Finding': {0.0: 89, 1.0: 1},
+ 'Pneumocystis': {0.0: 90},
+ 'Pneumonia': {0.0: 5, 1.0: 85},
+ 'SARS': {0.0: 90},
+ 'Streptococcus': {0.0: 90},
+ 'Viral Pneumonia': {0.0: 9, 1.0: 81}}
 
  ```
 
 [Lung Bounding Boxes](annotations/imageannotation_ai_lung_bounding_boxes.json) contributed by Andrew Gough at [ImageAnnotation.AI, Inc.](https://www.imageannotation.ai/covid-19)
 
+[Pneumonia severity scores](annotations/covid-severity-scores.csv) from the paper [Predicting COVID-19 Pneumonia Severity on Chest X-ray with Deep Learning
+](http://arxiv.org/abs/2005.11856)
+
 ## Contribute
 
- - Submit data directly to the project (coming soon!)
+ - Submit data directly to the project. View our [research protocol](https://docs.google.com/document/d/14b7cou98YhYcJ2jwOKznChtn5y6-mi9bgjeFv2DxOt0/edit). Contact us to start the process.
  - We can extract images from publications. Help identify publications which are not already included using a GitHub issue (DOIs we have are listed in the metadata file). There is a searchable database of COVID-19 papers [here](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov), and a non-searchable one (requires download) [here](https://pages.semanticscholar.org/coronavirus-research).
  
  - Submit data to these sites (we can scrape the data from them):
